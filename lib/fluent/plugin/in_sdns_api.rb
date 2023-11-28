@@ -115,7 +115,7 @@ module Fluent
           if res.nil?
             return
           end
-          $log.debug("sdns api query result: #{res['data']['total']}")
+          $log.info("sdns api query result total: #{res['data']['total']}")
           send_msg(res['data']['items'])
           for cur_page in 2..res['data']['total_pages'] do
             full_url = get_full_url(start_time, end_time, cur_page)
@@ -149,7 +149,7 @@ module Fluent
               "threat_type" => item["threat_type"],
               "event_id" => item["event_id"],
               "event_name" => item["event_name"],
-              "event_description" => item["event_description"],
+              "event_description" => item["event_description"].gsub("\n", '\\n').gsub("\t", '\\t'),
             }
             es = OneEventStream.new(Fluent::EventTime.now, record)
             router.emit_stream(@tag, es)
