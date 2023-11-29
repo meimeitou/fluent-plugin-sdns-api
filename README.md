@@ -6,10 +6,16 @@ sdns-api is a fluentd input plugin to do something.
 
 ## Installation
 
-### RubyGems
+### Fluentd
 
 ```shell
-gem install fluent-plugin-sdns-api
+fluent-gem install fluent-plugin-sdns-api
+```
+
+### td-agent
+  
+```shell
+td-agent-gem install fluent-plugin-sdns-api
 ```
 
 ### Bundler
