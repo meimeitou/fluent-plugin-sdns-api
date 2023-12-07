@@ -10,7 +10,7 @@ class SdnsApiListThreatDetailInputTest < Test::Unit::TestCase
   CONFIG = %[
     client_ip '1.1.1.1'
     access_key 'xxx'
-    endpoint 'https://api-fake.dns.qihoo.net/apis/grpc/v2/ListThreatDetail'
+    endpoint 'https://xxx.net/apis/grpc/v2/ListThreatDetail'
     access_secret 'sdf'
   ]
 

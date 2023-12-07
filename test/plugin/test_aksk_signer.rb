@@ -11,7 +11,7 @@ class SdnsApiSignerTest < Test::Unit::TestCase
     sig.key = "Fad3mbhh9NwadtEd7t0ekFp5HwrNJiDc" # test key
     sig.secret = "5MLR15LYGn8IeTHQwPs7tZyJslGqNZmYI6g8eHETGrWZYZ6J7U9Ak8CrRlSyCEMT"
 
-    r = Fluent::Plugin::SdnsApiSinger::HttpRequest.new("GET", "https://api-fake.dns.qihoo.net/apis/grpc/v2/ListThreatDetail")
+    r = Fluent::Plugin::SdnsApiSinger::HttpRequest.new("GET", "https://xxx.net/apis/grpc/v2/ListThreatDetail")
     r.headers = {"content-type" => "application/json"}
 
     r.body = ''
