@@ -37,7 +37,7 @@ class SdnsApiListThreatDetailInputTest < Test::Unit::TestCase
       d = create_driver(%[
         access_key 'L2guCE9mRsuvUhNxUDKfgjKR083RqIFB'
         access_secret 'Vy4HrnHHZdewCkeQ9pHeiN6repMUgzjeoP2mqzMCVY2Hbne0k4jlKzZ10unYIKo5'
-        endpoint 'https://api-fake.dns.qihoo.net/apis/grpc/v2/ListThreatDetail'
+        endpoint 'https://xxx.net/apis/grpc/v2/ListThreatDetail'
         page_size 20
         scrape_interval 600
       ])
@@ -55,7 +55,7 @@ class SdnsApiListThreatDetailInputTest < Test::Unit::TestCase
       d = create_driver(%[
         access_key 'L2guCE9mRsuvUhNxUDKfgjKR083RqIFB'
         access_secret 'Vy4HrnHHZdewCkeQ9pHeiN6repMUgzjeoP2mqzMCVY2Hbne0k4jlKzZ10unYIKo5'
-        endpoint 'https://api-fake.dns.qihoo.net/apis/grpc/v2/ListThreatDetail'
+        endpoint 'https://xxx.net/apis/grpc/v2/ListThreatDetail'
         page_size 100
         scrape_interval 600
       ])
