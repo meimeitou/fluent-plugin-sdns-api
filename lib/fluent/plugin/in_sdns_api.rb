@@ -147,9 +147,8 @@ module Fluent
               "action" => item["action"],
               "threat_level" => item["threat_level"],
               "threat_type" => item["threat_type"],
-              "event_id" => item["event_id"],
-              "event_name" => item["event_name"],
-              "event_description" => item["event_description"].gsub("\n", '\\n').gsub("\t", '\\t'),
+              "threat_name" => item["threat_name"],
+              "threat_description" => item["threat_description"].gsub("\n", '\\n').gsub("\t", '\\t'),
             }
             es = OneEventStream.new(Fluent::EventTime.now, record)
             router.emit_stream(@tag, es)

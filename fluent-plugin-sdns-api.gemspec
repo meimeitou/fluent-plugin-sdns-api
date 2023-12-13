@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name    = "fluent-plugin-sdns-api"
-  spec.version = "0.1.1"
+  spec.version = "0.1.2"
   spec.authors = ["yinqiwei"]
   spec.email   = ["772006843@qq.com"]
 
